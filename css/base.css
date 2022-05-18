@@ -1,6 +1,4 @@
 @charset "utf-8";
-
-
 * {
     margin: 0;
     padding: 0;
@@ -13,11 +11,10 @@
     transition-duration: 0;
 }
 
-.banner{
+.banner {
     width: 100%;
     height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072);
-    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/paper.jpg);
     position: relative;
     z-index: 1111;
 }
@@ -25,13 +22,13 @@
 .cover {
     width: 100%;
     height: 100%;
-    background-color: rgb(44, 44, 44);
-    opacity: .65;
     position: absolute;
     z-index: 5555;
 }
 
+
 /* conatct us pg only */
+
 #outer {
     width: 100%;
     height: 90vh;
@@ -41,6 +38,8 @@
     flex-direction: column;
     z-index: 9999;
 }
+
+
 /* ----------------- */
 
 .container {
@@ -62,7 +61,6 @@ header h1 {
     color: rgb(0, 0, 0);
 }
 
-
 nav {
     margin-right: 230px;
     padding-left: 30px;
@@ -71,20 +69,19 @@ nav {
     height: 0;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     font-size: 0;
 }
 
-nav ul li{ 
+nav ul li {
     display: inline;
     line-height: 56px;
     cursor: default;
-
 }
 
-nav ul li a{
-    font-size:  20px;
+nav ul li a {
+    font-size: 20px;
     font-weight: 500;
     padding: 10px;
     color: rgb(255, 255, 255);
@@ -94,20 +91,18 @@ nav ul li a{
     cursor: pointer;
 }
 
-nav ul li a :hover{
+nav ul li a :hover {
     text-decoration: underline;
 }
 
-nav ul li + li{
+nav ul li+li {
     margin-left: 35px;
-
 }
 
-header h1 a{
+header h1 a {
     padding-top: 10px;
     font-weight: 500;
     color: #fff;
     color: #fff;
     text-decoration: none;
 }
-
