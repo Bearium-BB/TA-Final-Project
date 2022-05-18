@@ -1,12 +1,7 @@
 @import "base.css";
-.container {
-    position: relative;
-    height: 100%;
-    max-width: 100%;
-    margin-left: 150px;
-}
 
-.intro-Container {
+
+.intro-Container{
     position: relative;
     width: 100%;
     height: 100%;
@@ -18,27 +13,66 @@
     align-items: center;
 }
 
-.banner {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    z-index: 1;
+header {
+    min-width: 100%;
+    height: 60px;
+    z-index: 9999;
 }
 
+header h1 {
+    padding-top: 10px;
+    font-weight: 500;
+    color: #fff;
 
-/* banner  */
+}
 
-.banner {
+.banner{
     width: 100%;
     height: 100vh;
-    background-image: url(https://www.simpleimageresizer.com/_uploads/photos/5bd2be7c/ocean_1280x743.jpg);
+    background-image: url(https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072);
     background-size: cover;
     position: relative;
     z-index: 1;
 }
 
+.cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 44, 44);
+    opacity: .65;
+    position: absolute;
+    z-index: 5555;
+}
+/* Main */
 
-/* button */
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box .infoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.infoBox h2 {
+    padding-bottom: 10px;
+}
+
+.preview {
+    background-image: linear-gradient(#b1c1c2,  #537b8a);
+}
 
 .button {
     display: inline-block;
@@ -59,177 +93,85 @@
     transition: all 2.5 ease-in-out;
 }
 
-* {
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    outline: 0px;
-    box-shadow: none;
-    box-sizing: border-box;
-    vertical-align: baseline;
-    -webkit-transition-duration: 0;
-    transition-duration: 0;
+#intro h1  {
+    color: #fff;
 }
 
-body {
-    background-image: url('alexander-andrews-yOIT88xWkbg-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+#intro p  {
+    color: #fff;
 }
 
-#cookies1 {
-    position: fixed;
-    width: 300px;
-    height: 250px;
-    background-color: white;
-    border-radius: 8px;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    padding: 15px;
-    display: none;
-    box-shadow: 5px 5px 15px -6px #888888;
-    z-index: 10000;
+
+
+
+
+/* animation */
+
+
+.arrow
+{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  /**
+   * Dark Arrow Down
+   */
+  background-size: contain;
 }
 
-#cookies1 p {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: 500;
+.bounce {
+  animation: bounce 2s infinite;
 }
 
-#cookies1 #but1 {
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 8px;
-    background-color: #2a93ff;
-    color: white;
-    margin-top: 15px;
-}
-
-#cookies1 #but2 {
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 8px;
-    background-color: white;
-    border: #2a93ff solid 1.5px;
-    color: #2a93ff;
-    margin-top: 15px;
-}
-
-#cookies1 #but2:hover {
-    color: #1d68b3;
-    transition-duration: 0.5s;
-}
-
-#cookies1 #but1:hover {
-    background-color: #1d68b3;
-}
-
-#cookies2 {
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    border-radius: 8px;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    padding: 15px;
-    display: none;
-}
-
-#cookies2 #but3 {
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 8px;
-    background-color: #2a93ff;
-    color: white;
-}
-
-#cookies2 #but3:hover {
-    background-color: #1d68b3;
-}
-
-#cookies2 h3 {
-    font-size: 15px;
-}
-
-#flex {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-}
-
-#inerbox {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#backgroundOP {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    height: 100vh;
-}
-
-.switch {
+i{
     position: relative;
+    padding-top: 340px;
+
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+.button {
     display: inline-block;
-    width: 60px;
-    height: 30px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
+    width: 120px;
+    height: 46px;
+    margin-top: 34px;
+    line-height: 47px;
+    background-color: #0d7aad;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+    transition: all 2.5 ease-in-out;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 22px;
-    width: 22px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+#footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(218, 218, 218);
 }
 
-input:checked+.slider {
-    background-color: #2196F3;
+#footer p {
+    padding-left: 40px;
 }
 
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    transform: translateX(30px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
