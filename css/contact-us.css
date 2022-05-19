@@ -1,14 +1,12 @@
 @import "base.css";
 
-
 /* body */
+
 #map {
     width: 100%;
     height: 100%;
     background-color: aqua;
 }
-
-
 
 #outer p {
     font-size: 35px;

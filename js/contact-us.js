@@ -18,6 +18,5 @@ const map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/streets-v11', // style URL
     center: [-97.1750196, 49.8482787], // starting position [lng, lat]
     interactive: false,
-
     zoom: 17 // starting zoom
 });

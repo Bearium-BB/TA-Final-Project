@@ -7,8 +7,7 @@
     box-shadow: none;
     box-sizing: border-box;
     vertical-align: baseline;
-    -webkit-transition-duration: 0;
-    transition-duration: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .banner {
