@@ -16,14 +16,14 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYmVhcml1bSIsImEiOiJjbDF3ZzJ4MW0wZGRvM2tvMXdpZ
 const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    center: [-97.1750196, 49.8482787], // starting position [lng, lat]
+    center: [-97.1767479, 49.847549], // starting position [lng, lat]
     interactive: false,
     zoom: 17 // starting zoom
 });
 
 // Create a new marker.
 const marker = new mapboxgl.Marker()
-    .setLngLat([-97.1750196, 49.8482787])
+    .setLngLat([-97.1767479, 49.847549])
     .addTo(map);
 
 
