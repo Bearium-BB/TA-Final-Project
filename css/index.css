@@ -27,28 +27,53 @@ header h1 {
 /* Main */
 
 main {
-    height: 100vh;
+    height: 500px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F4F5F6;
 }
 
 .box {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .box .infoBox {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
 }
 
 .infoBox h2 {
     padding-bottom: 10px;
+    font-size: 42px;
+}
+
+.infoBox p {
+    width: 45%;
+    text-align: center;
+}
+
+.infoBox a {
+    width: 200px;
+    height: 70px;
+    background-color: #2a93ff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.infoBox a:hover {
+    background-color: #1d68b3;
 }
 
 .preview {
@@ -150,4 +175,83 @@ i {
 
 #footer p {
     padding-left: 40px;
+}
+
+#cookies1 {
+    position: fixed;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 15px;
+    display: none;
+    z-index: 1000000;
+}
+
+#cookies1 p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#cookies1 #but1 {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #2a93ff;
+    color: white;
+    margin-top: 15px;
+}
+
+#cookies1 #but2 {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: white;
+    border: #2a93ff solid 1.5px;
+    color: #2a93ff;
+    margin-top: 15px;
+}
+
+#cookies1 #but2:hover {
+    color: #1d68b3;
+    transition-duration: 0.5s;
+}
+
+#cookies1 #but1:hover {
+    background-color: #1d68b3;
+}
+
+#cookies2 {
+    position: fixed;
+    width: 300px;
+    height: 270px;
+    background-color: white;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 15px;
+    display: none;
+    z-index: 1000000;
+}
+
+#cookies2 #but3 {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #2a93ff;
+    color: white;
+    margin-top: 15px;
+}
+
+#cookies2 #but3:hover {
+    background-color: #1d68b3;
+}
+
+#cookies2 h3 {
+    font-size: 15px;
 }

@@ -90,8 +90,9 @@ nav ul li a {
     cursor: pointer;
 }
 
-nav ul li a :hover {
+nav ul li a:hover {
     text-decoration: underline;
+    color: rgb(243, 243, 243);
 }
 
 nav ul li+li {
@@ -102,6 +103,10 @@ header h1 a {
     padding-top: 10px;
     font-weight: 500;
     color: #fff;
-    color: #fff;
     text-decoration: none;
+}
+
+header h1 a:hover {
+    text-decoration: underline;
+    color: rgb(243, 243, 243);
 }
