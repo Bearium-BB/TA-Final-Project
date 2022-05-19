@@ -44,19 +44,18 @@
 }
 
 #formOuter {
-    height: 750px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F4F5F6;
+    background-color: white;
 }
 
 section {
     background-color: white;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 4px;
     width: 500px;
-    box-shadow: 5px 5px 15px -6px #888888;
 }
 
 p {
@@ -66,8 +65,9 @@ p {
 h2 {
     color: black;
     text-align: center;
-    padding-bottom: 10px;
-    font-size: 32px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 h3 {
@@ -76,16 +76,16 @@ h3 {
 
 input[type="button"],
 input[type="reset"] {
-    width: 200px;
-    height: 80px;
+    width: 175px;
+    height: 50px;
     background-color: #2A93FF;
     color: #eeeeee;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 35px;
+    margin-top: 10px;
     margin-right: 5px;
 }
 
@@ -94,9 +94,9 @@ input[type="email"] {
     width: 100%;
     height: 50px;
     padding: 0 15px;
-    background-color: rgb(236, 236, 236);
+    background-color: #F4F5F6;
     border: 1px solid #bbb;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 16px;
     font-weight: 400;
     color: black;
@@ -130,14 +130,13 @@ input[type="email"] {
     width: 100%;
     height: 150px;
     padding: 0 15px;
-    background-color: rgb(236, 236, 236);
+    background-color: #F4F5F6;
     border: 1px solid #bbb;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 16px;
     font-weight: 400;
     color: black;
-    margin-top: 15px;
-    padding: 5px;
+    padding: 15px;
 }
 
 ::placeholder {
@@ -163,4 +162,23 @@ input[type="button"]:hover {
 #ER {
     padding-top: 10px;
     opacity: 0;
+    width: 446px;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(218, 218, 218);
+}
+
+#footer p {
+    padding-left: 40px;
+    color: black;
+}
+
+#buttons {
+    width: 446px;
+    height: 100%;
 }

@@ -110,3 +110,20 @@ header h1 a:hover {
     text-decoration: underline;
     color: rgb(243, 243, 243);
 }
+
+#shop {
+    width: 175px;
+    height: 30px;
+    background-color: #2a93ff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+#shop:hover {
+    background-color: #1d68b3;
+}
